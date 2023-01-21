@@ -13,8 +13,8 @@ struct Interval{
 class RockFestival{
     int nFriends, nShows;
     double* scores;
-    Interval* maxInterval(Interval* i1, Interval* i2);
-    Interval* maxInterval(Interval* i1, Interval* i2, Interval* i3){return maxInterval(maxInterval(i1,i2),i3);}
+    Interval* biggerInterval(Interval* i1, Interval* i2);
+    Interval* biggerInterval(Interval* i1, Interval* i2, Interval* i3);
 
     public:
         RockFestival(int f, int s);
